@@ -16,18 +16,18 @@ int main() {
 
 int euclidean(int big, int small)
 {
-  int last = 1; // 매 연산마다 나머지를 저장함
+	int last = 1; // 매 연산마다 나머지를 저장함
   
-  while (last != 0)
-  {
-    if (big % small == 0)
-      break;
-    last = big % small;
-    big = small;
-    small = last;
-  }
-  
-  return last;
+	while (last != 0)
+	{
+		if (big % small == 0)
+			break;
+		last = big % small;
+		big = small;
+		small = last;
+	}
+	
+	return last;
 }
 
 
