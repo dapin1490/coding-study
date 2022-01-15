@@ -1,3 +1,5 @@
+// 트리 사용 X, 시간초과로 틀림
+
 #include <iostream>
 #include <vector>
 using namespace std;
