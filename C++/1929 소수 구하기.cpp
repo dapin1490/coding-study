@@ -1,3 +1,5 @@
+// 필수 개념 : 에라토스테네스의 체
+
 #include <iostream>
 #include <vector>
 using namespace std;
