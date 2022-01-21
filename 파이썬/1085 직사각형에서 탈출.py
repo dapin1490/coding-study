@@ -5,9 +5,13 @@ d[1] = w - d[0]  # 서
 d[2] = h - y  # 북
 d[3] = h - d[2]  # 남
 
+# (1)
 min_dis = 1000
 for dist in d:
     if dist < min_dis:
         min_dis = dist
 
 print(min_dis)
+
+# (2)
+print(min(d))
