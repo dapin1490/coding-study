@@ -1,3 +1,6 @@
+/* 유클리드 호제법 : 최대공약수를 구할 수 있다
+최소공배수 : 두 수의 곱 ÷ 최대공약수 */
+
 #include <iostream>
 using namespace std;
 
