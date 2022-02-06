@@ -28,14 +28,14 @@ void qsort(int list[], int i, int j) // 배열은 기본적으로 참조 전달�
 	if (i >= j) // 배열 크기가 1이라면 정렬 끝, 리턴
 		return;
 
-	while (i <= j) { // i가 j보다 커지면 중단
+	while (i < j) { // i와 j가 만나면 
 		while (list[i] < list[p]) // i 쪽에서 기준 값보다 큰 값 찾기
 			i++;
 
 		while (list[j] > list[p]) // j 쪽에서 기준 값보다 작은 값 찾기
 			j--;
 
-		if (i <= j) { // i가 왼쪽에 있고 j가 오른쪽에 있을 때에만 실행
+		if (i <= j) { // i가 왼쪽에 있고 j가 오른쪽에 있을 때에만 실행, 겹쳐도 된다.
 			swap(list[i], list[j]); // i와 j 자리에 있는 두 요소를 서로 바꿈
 			// 사용한 i와 j를 바꿔주지 않으면 무한루프가 생김
 			i++;
