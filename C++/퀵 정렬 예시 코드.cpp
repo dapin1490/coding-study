@@ -28,7 +28,7 @@ void qsort(int list[], int i, int j) // 배열은 기본적으로 참조 전달�
 	if (i >= j) // 배열 크기가 1이라면 정렬 끝, 리턴
 		return;
 
-	while (i < j) { // i와 j가 만나면 
+	while (i < j) { // i와 j가 만나면 중단
 		while (list[i] < list[p]) // i 쪽에서 기준 값보다 큰 값 찾기
 			i++;
 
