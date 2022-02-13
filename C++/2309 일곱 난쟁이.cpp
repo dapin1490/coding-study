@@ -12,7 +12,7 @@ int main()
 
 	int v[9] = { 0 };
 	int ar[9] = { 1, 1, 1, 1, 1, 1, 1, 1, 1 };
-	int n = 0, idx;
+	int n = 0;
 	for (int i = 0; i < 9; i++) {
 		cin >> v[i];
 		n += v[i];
