@@ -30,7 +30,7 @@ int euclidean(int big, int small)
 		small = last;
 	}
 	
-	return last;
+	return small;
 }
 
 
