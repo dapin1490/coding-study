@@ -19,9 +19,15 @@ int main() {
 
 int euclidean(int big, int small)
 {
+	if (big < small) { // 대소관계 정리
+		int temp = big;
+		big = small;
+		small = temp;
+	}
+
 	int last = 1; // 매 연산마다 나머지를 저장함
-  
-	while (last != 0)
+
+	while (true)
 	{
 		if (big % small == 0)
 			break;
@@ -29,8 +35,7 @@ int euclidean(int big, int small)
 		big = small;
 		small = last;
 	}
-	
+
 	return small;
 }
-
 
