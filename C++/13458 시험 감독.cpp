@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <utility>
 using namespace std;
 
 // 필요한 감독관 수 구하기. s는 학생 수
