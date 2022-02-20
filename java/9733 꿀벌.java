@@ -7,7 +7,7 @@ public class Main {
         String [] name = {"Re", "Pt", "Cc", "Ea", "Tb", "Cm", "Ex"};
         int [] work = {0, 0, 0, 0, 0, 0, 0};
 
-        HashMap<String, Integer> v = new HashMap<String, Integer>();
+        HashMap<String, Integer> v = new HashMap<>();
         v.put("Re", 0);
         v.put("Pt", 1);
         v.put("Cc", 2);
