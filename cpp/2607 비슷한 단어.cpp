@@ -21,16 +21,14 @@ int main()
 
 		for (int j = 0; j < len; j++) {
 			int idx = value.find(key.at(j));
-			if (idx != -1) {
+			if (idx != -1)
 				value.erase(idx, 1);
-			}
 			else
 				notword++;
 		}
 
-		if (notword <= 1 && value.length() <= 1) {
+		if (notword <= 1 && value.length() <= 1)
 			cnt++;
-		}
 	}
 
 	cout << cnt;
