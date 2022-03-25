@@ -1,28 +1,28 @@
 def vowel(c):
-  if c == 'a' or c == 'e' or c == 'i' or c == 'o' or c == 'u':
-    return True
-  else:
-    return False
+	if c == 'a' or c == 'e' or c == 'i' or c == 'o' or c == 'u':
+		return True
+	else:
+		return False
 
 
 def dokkaebi(n):
-  key = n
-  while True:
-    if vowel(n[0]):
-      break
+	key = n
+	while True:
+		if vowel(n[0]):
+			break
 
-    n = n[1:] + n[0]
-    if n == key:
-      break
+		n = n[1:] + n[0]
+		if n == key:
+			break
 
-  n += "ay"
-  return n
+	n += "ay"
+	return n
 
 
 while True:
-  s = input()
+	s = input()
 
-  if s == "#":
-    break
+	if s == "#":
+		break
 
-  print(dokkaebi(s))
+	print(dokkaebi(s))
