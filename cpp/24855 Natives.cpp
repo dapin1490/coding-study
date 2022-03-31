@@ -13,18 +13,18 @@ int main()
 
 	p = (int*)malloc(sizeof(int) * n);
 
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < n; i++)
 		cin >> *(p + i);
-	}
 
-	sort(p, (p + n));
+	sort(p, p + n);
 
 	total = (n % 2 == 0) ? *(p + n / 2) : 0;
-	for (int i = n - 1; i > n / 2; i--) {
+	for (int i = n - 1; i > n / 2; i--)
 		total += *(p + i);
-	}
 
 	cout << total;
+	
+	free(p);
 
 	return 0;
 }
