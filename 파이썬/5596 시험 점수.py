@@ -1,0 +1,5 @@
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+aa = sum(a)
+bb = sum(b)
+print(aa if aa >= bb else bb)
