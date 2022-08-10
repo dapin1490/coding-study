@@ -14,4 +14,5 @@ fun main() {
     
     bw.flush()
     bw.close()
+    br.close()
 }

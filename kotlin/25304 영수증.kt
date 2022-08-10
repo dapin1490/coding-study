@@ -4,10 +4,10 @@ import java.io.InputStreamReader
 import java.io.OutputStreamWriter
 import java.util.StringTokenizer
 
-val br = BufferedReader(InputStreamReader(System.`in`))
-val bw = BufferedWriter(OutputStreamWriter(System.out))
-
 fun main() {
+	val br = BufferedReader(InputStreamReader(System.`in`))
+	val bw = BufferedWriter(OutputStreamWriter(System.out))
+
 	val total: Int = br.readLine().toInt()
 	var n: Int = br.readLine().toInt()
 	var sum_total: Int = 0
@@ -25,4 +25,5 @@ fun main() {
 
 	bw.flush()
 	bw.close()
+	br.close()
 }
