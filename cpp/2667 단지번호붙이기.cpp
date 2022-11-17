@@ -1,4 +1,4 @@
-// 코드 참고 10주 강의자료 Class10_GraphBook.cpp
+// 코드 참고 자료구조실습 10주 강의자료 Class10_GraphBook.cpp
 
 #include <iostream>
 #include <algorithm>
