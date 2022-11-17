@@ -1,4 +1,4 @@
-// 코드 참고 자료구조실습 10주 강의자료 Class10_GraphBook.cpp
+// 코드 참고 10주 강의자료 Class10_GraphBook.cpp
 
 #include <iostream>
 #include <algorithm>
@@ -21,8 +21,7 @@ void dfs_recur(int a, int b, int lb) {
 	house[lb - 2]++;
 
 	for (int i = 0; i < 4; i++) {
-		switch (i)
-		{
+		switch (i) {
 		case 0: x = a - 1; y = b; break;
 		case 1: x = a + 1; y = b; break;
 		case 2: x = a; y = b - 1; break;
@@ -38,7 +37,7 @@ void dfs_recur(int a, int b, int lb) {
 void dfs_iter(int a, int b, int label) {
 	stack<pair<int, int>> st;
 	int x = a, y = b;
-	
+
 	st.emplace(a, b);
 
 	while (!st.empty()) {
@@ -52,8 +51,7 @@ void dfs_iter(int a, int b, int label) {
 			house[label - 2]++;
 
 			for (int i = 0; i < 4; i++) {
-				switch (i)
-				{
+				switch (i) {
 				case 0: x = a - 1; y = b; break;
 				case 1: x = a + 1; y = b; break;
 				case 2: x = a; y = b - 1; break;
@@ -91,7 +89,7 @@ int main()
 {
 	// 빠른 입출력
 	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-    
+
     string line;
 	int cc;
 
@@ -102,9 +100,8 @@ int main()
 	// 지도 입력
 	for (int i = 0; i < n; i++) {
 		cin >> line;
-		for (int j = 0; j < n; j++) {
+		for (int j = 0; j < n; j++)
 			m[i][j] = int(line.at(j)) - int('0');
-		}
 	}
 
 	cc = apt_number();
@@ -112,9 +109,8 @@ int main()
 	sort(house.begin(), house.end());
 
 	cout << cc << "\n";
-	for (vector<int>::iterator i = house.begin(); i != house.end(); i++) {
+	for (vector<int>::iterator i = house.begin(); i != house.end(); i++)
 		cout << *i << "\n";
-	}
 
 	return 0;
 }
