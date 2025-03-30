@@ -21,15 +21,22 @@ if response.status_code == 200:
 #     random_item = random.choice(data_list)
 #     print(random_item)
 
-excluded_chars = {'D', 'O', 'N', 'B', 'U', 'E', 'L', 'Y', 'T', 'Z'}
+# 2025.03.31
+# 11000 | 20010 | 22100 | 22020 | 22020 | 22222
+# AMOWT | MUDAR | MAIKS | MAZIC | MAVIE | MAFIA
+
+excluded_chars = {'O', 'W', 'T', 'U', 'D', 'R', 'K', 'S', 'Z', 'C', 'V', 'E'}
 
 answers = [
     item for item in data_list
-    if  item[2] == 'I' and
-        item[1] == 'M' and
-        item[0] == 'S' and
+    if  item[3] == 'I' and
+        # 'I' in [item[3], item[4]] and
+        # 'M' in [item[0], item[2], item[3], item[4]] and
+        # item[3] == 'I' and
+        item[1] == 'A' and
+        item[0] == 'M' and
         not any(char in item for char in excluded_chars)
 ]
 
 print(random.choice(answers))
-print(f'{round(len(answers) / len(data_list) * 100, 4)} %')
+print(f'{len(answers)}, {round(len(answers) / len(data_list) * 100, 4)} %')
