@@ -1,0 +1,5 @@
+nums = input()
+nums_data = nums.split(" ")
+a = int(nums_data[0])
+b = int(nums_data[1])
+print(a - b)
